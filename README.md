@@ -1,4 +1,5 @@
 # Seasonal structuring of microbial communities and functional potential in a Patagonian fjord
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23401703.svg)](https://doi.org/10.5281/zenodo.23401703)
 
 Code, processed data and the marker protein database for:
 
@@ -94,4 +95,4 @@ Code: MIT (`LICENSE`). Data, database and results: CC BY 4.0 (`LICENSE-DATA`).
 
 ## Citation
 
-Please cite the article above and this archive (see `CITATION.cff`; Zenodo DOI to be added on release).
+Please cite the article above and this archive (see `CITATION.cff`): https://doi.org/10.5281/zenodo.23401703.
