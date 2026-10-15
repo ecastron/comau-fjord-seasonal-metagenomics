@@ -1,0 +1,20 @@
+{
+  "title": "Code and data for: Seasonal structuring of microbial communities and functional potential in a Patagonian fjord",
+  "upload_type": "software",
+  "description": "Analysis code, processed data (phyloseq objects, CoverM coverage, GTDB-Tk R232 classifications, gene-by-MAG matrices) and the marker protein database (Greening lab metabolic marker gene databases plus UniProt sets) for a seasonal, genome-resolved study of bacterioplankton in the Comau Fjord, northern Patagonia, Chile. Code is MIT licensed; data, database and results are CC BY 4.0.",
+  "creators": [
+    {"name": "Guajardo-Leiva, Sergio", "affiliation": "Universidad de Talca"},
+    {"name": "Escobedo, Víctor M.", "affiliation": "Universidad de Talca"},
+    {"name": "Galbán-Malagón, Cristóbal", "affiliation": "Universidad Mayor"},
+    {"name": "Berríos-Farías, Valentín", "affiliation": "Universidad de Talca"},
+    {"name": "Moreno-Pino, Mario", "affiliation": "Universidad de Talca"},
+    {"name": "Molina-Trincado, Verónica", "affiliation": "Universidad de Playa Ancha"},
+    {"name": "Castro-Nallar, Eduardo", "affiliation": "Universidad de Talca"}
+  ],
+  "license": "MIT",
+  "keywords": ["metagenomics", "metagenome-assembled genomes", "fjord", "Patagonia", "bacterioplankton", "seasonality", "functional potential"],
+  "related_identifiers": [
+    {"identifier": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA729490", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "10.26180/14431208.v1", "relation": "references", "scheme": "doi"}
+  ]
+}

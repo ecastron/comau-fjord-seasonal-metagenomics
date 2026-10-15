@@ -1,0 +1,11 @@
+The contents of data/, database/ and results/ are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+The marker protein database (database/all_metabolic_genes.fasta.gz) combines
+sequence sets compiled by the Greening lab (Leung and Greening 2021,
+https://doi.org/10.26180/14431208.v1) with sets retrieved from UniProt
+(https://www.uniprot.org, CC BY 4.0). Please cite those sources when reusing it.
+
+The code (scripts/, hpc/, utils.R, run_all.sh) is licensed under the MIT
+License (see LICENSE).

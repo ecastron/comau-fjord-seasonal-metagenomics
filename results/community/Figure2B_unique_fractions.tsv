@@ -1,0 +1,4 @@
+group	vars	adjR2	F	p
+Nutrients	nitrate_uM;nitrite_uM;silicate_uM	0.03395067058084156	3.18078790894698	0.001
+Physicochemical	salinity_PSU;temperature_C;pH	0.07528328513102833	5.883583205414046	0.001
+Productivity	chlorophyll_A_ugL;C_total_ug;N_total_ug;C_N_ratio	0.016721767421851386	1.7916793484662843	0.001

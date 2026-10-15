@@ -1,0 +1,2 @@
+R2	adjR2	F	p	predictors_after_VIF	n_samples
+0.3116367084888906	0.2766288754803147	6.8816445972164795	0.001	nitrate_uM;nitrite_uM;silicate_uM;salinity_PSU;temperature_C;pH;chlorophyll_A_ugL;C_total_ug;N_total_ug;C_N_ratio	90

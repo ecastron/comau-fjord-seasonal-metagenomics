@@ -1,0 +1,13 @@
+predictor	MAG	label	edf	F	p
+temperature_C	cluster1_bin.26	<i>Actinomarina</i> (cluster1_bin.26)	2.60292539014106	5.86053219048951	0.00100093989100375
+temperature_C	cluster2_bin.17	<i>Actinomarina</i> (cluster2_bin.17)	2.59264798584256	5.86080264862484	0.00100937212550462
+temperature_C	cluster3_bin.138	<i>Actinomarina</i> (cluster3_bin.138)	2.6257894816589	6.12717428630862	0.000713834385288992
+temperature_C	cluster2_bin.205	<i>Algibacter_B</i>	3.13181377893515	4.79567540986014	0.0040586634433305
+temperature_C	cluster2_bin.209	<i>Parasynechococcus</i>	3.64524306719005	65.5599159173852	0
+temperature_C	cluster3_bin.96	<i>Synechococcus_C</i>	3.82617006300688	48.82024348549	0
+salinity_PSU	cluster1_bin.26	<i>Actinomarina</i> (cluster1_bin.26)	2.53372809995097	6.50740994048064	0.000591279077615692
+salinity_PSU	cluster2_bin.17	<i>Actinomarina</i> (cluster2_bin.17)	2.51178941817722	6.45568704337162	0.000701151016235635
+salinity_PSU	cluster3_bin.138	<i>Actinomarina</i> (cluster3_bin.138)	2.51036053016551	6.63883116016555	0.000571133154946002
+salinity_PSU	cluster3_bin.161	<i>MED-G09</i>	2.3967253954394	4.10855879980779	0.0130328636965207
+salinity_PSU	cluster2_bin.209	<i>Parasynechococcus</i>	3.40382393257441	33.8829799096528	0
+salinity_PSU	cluster3_bin.96	<i>Synechococcus_C</i>	3.36794816605495	31.1995580253133	0

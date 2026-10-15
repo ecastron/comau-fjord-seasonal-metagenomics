@@ -1,0 +1,4 @@
+season	.y.	group1	group2	n1	n2	statistic	p	p.adj
+Summer	aMPD	5	20	12	11	51	0.372	0.372
+Fall	aMPD	5	20	12	12	0	3.66e-5	1.0980000000000001e-4
+Winter	aMPD	5	20	22	21	122	0.00838	0.012570000000000001
