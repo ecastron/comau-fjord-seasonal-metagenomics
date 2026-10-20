@@ -1,0 +1,34 @@
+greening_set	marker	pathway	min_identity_pct	reference_sequences
+Cytochrome_bd_oxidase_CydA	CydA	Respiration	50	36188
+Cytochrome_bo3_oxidase_CyoA	CyoA	Respiration	50	8201
+Cytochrome_aa3_oxidase_CoxA	CoxA	Respiration	50	22832
+Cytochrome_cbb3_oxidase_CcoN	CcoN	Respiration	50	11042
+NADH-ubiquinone_oxidoreductase_NuoF	NuoF	Respiration	60	6348
+Fumarate_reductase_FrdA	FrdA	Respiration	50	46
+Succinate_dehydrogenase_SdhA	SdhA	Respiration	50	350
+F-type_ATP_synthase_AtpA	AtpA	Respiration	60	26036
+Flavocytochrome_c_sulfide_dehydrogenase_FCC_sequences	FCC	Respiration	50	99
+Rubisco_RbcL_95_Filtered	RbcL	Carbon core	60	707
+Carbon_monoxide_dehydrogenase_CoxL	CoxL	Carbon core	60	709
+Malonyl-CoA_reductase_Mcr_sequences	Mcr	Carbon core	50	6
+Ammonia_monooxygenase_amoA	AmoA	Nitrogen cycle	60	66
+Nitrite_oxidoreductase_NxrA	NxrA	Nitrogen cycle	60	32
+Periplasmic_nitrate_reductase_NapA_sequences	NapA	Nitrogen cycle	50	202
+Dissimilatory_nitrate_reductase_NarG_sequences	NarG	Nitrogen cycle	50	277
+Copper_containing_nitrite_reductase_NirK_sequences	NirK	Nitrogen cycle	50	338
+Cytochrome_cd1_nitrite_reductase_NirS_sequence	NirS	Nitrogen cycle	50	164
+Ammonia-forming_nitrite_reductase_NrfA_sequences	NrfA	Nitrogen cycle	50	162
+Nitric_oxide_reductase_NorB_sequences	NorB	Nitrogen cycle	50	330
+Nitrous_oxide_reductase_NosZ_sequences	NosZ	Nitrogen cycle	50	403
+Sulfide_quinone_oxidoreductase_Sqr_sequences	Sqr	Sulfur cycle	50	333
+Thiosulfohydrolase_SoxB_sequences	SoxB	Sulfur cycle	50	235
+Dissimilatory_sulfite_reductase_DsrA_sequences	DsrA	Sulfur cycle	50	275
+Particulate_methane_monooxygenase_PmoA	PmoA	Methane cycling	50	85
+Soluble_methane_monooxygenase_MmoA	MmoA	Not used in pathway analyses	60	21
+Photosystem_I_reaction_centre_PsaA_sequences	PsaA	Phototrophy	80	54
+Microbial_rhodopsin_RHO	RHO	Phototrophy	30	189
+NiFe_hydrogenase	NiFe	Hydrogenases	50	2015
+FeFe_hydrogenase	FeFe	Not used in pathway analyses	60	1221
+Arsenite_oxidase_ARO	ARO	Detoxification and other	70	543
+Reductive_dehalogenase_RdhA	RdhA	Detoxification and other	45	46
+Formate_dehydrogenase_FdhA	FdhA	Detoxification and other	50	12830

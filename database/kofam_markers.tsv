@@ -1,0 +1,32 @@
+ko	marker	gene	pathway
+K01595	PEPC	ppc	Carbon core
+K01682	AcnB	acnB	Carbon core
+K01672	CA	alpha carbonic anhydrase	Carbon core
+K01673	CA	cynT (beta carbonic anhydrase)	Carbon core
+K01674	CA	cah (alpha carbonic anhydrase)	Carbon core
+K01726	CA	gamma carbonic anhydrase	Carbon core
+K01743	CA	cam (gamma carbonic anhydrase)	Carbon core
+K14028	MDH	mxaF	Carbon core
+K23995	MDH	xoxF	Carbon core
+K02703	PsbA	psbA	Phototrophy
+K08929	PufM	pufM	Phototrophy
+K04719	BluB	bluB	Cobalamin (B12)
+K06073	btuC	btuC (counted as complete BtuCDF)	Cobalamin (B12)
+K06074	btuD	btuD (counted as complete BtuCDF)	Cobalamin (B12)
+K06858	btuF	btuF (counted as complete BtuCDF)	Cobalamin (B12)
+K19221	CobA	cobA	Cobalamin (B12)
+K02226	CobC	cobC	Cobalamin (B12)
+K02231	CobU	cobU/cobP	Cobalamin (B12)
+K02189	CbiG	cbiG	Cobalamin (B12)
+K17486	dmdA	dmdA	DMSP and methylated compounds
+K20034	dmdB	dmdB	DMSP and methylated compounds
+K20036	dmdD	dmdD	DMSP and methylated compounds
+K16953	dddL	dddL	DMSP and methylated compounds
+K28067	DddP	dddP	DMSP and methylated compounds
+K21310	mddA	mddA	DMSP and methylated compounds
+K18277	Tmm	tmm	DMSP and methylated compounds
+K17285	mtoX	mtoX (SELENBP1)	DMSP and methylated compounds
+K07812	dorA	dorA/torZ	DMSP and methylated compounds
+K00537	ArsC	arsC (glutaredoxin)	Detoxification and other
+K03741	ArsC	arsC (thioredoxin)	Detoxification and other
+K17224	SoxB_check	soxB (cross-check of the Greening SoxB calls; not counted)	Not used in pathway analyses

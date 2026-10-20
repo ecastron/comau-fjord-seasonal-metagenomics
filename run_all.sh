@@ -10,7 +10,6 @@ if [[ "${1:-}" == "--rebuild" ]]; then
   Rscript scripts/01_build_ps_cov10.R           > logs/01.log 2>&1
   Rscript scripts/02_build_ps_r232.R            > logs/02.log 2>&1
   python3 scripts/03_make_gene_table.py         > logs/03.log 2>&1
-  Rscript scripts/04_collapse_gene_names.R      > logs/04.log 2>&1
   echo "rebuild done"
 fi
 for s in figure1 figure2 suppfig_environment suppfig_gam_temperature_salinity \

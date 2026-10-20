@@ -28,7 +28,7 @@ suppressPackageStartupMessages(invisible(lapply(c(cran_pkgs, bioc_pkgs), library
 
 # ---- Inputs ----
 ps      <- load_ps("data/Comau_ps90_cov10_r232.RDS")
-hits_fp <- "data/functional/gene_bin_mat.collapsed.csv"  # genes x MAGs (677 MAGs)
+hits_fp <- "data/functional/gene_bin_mat.csv"  # genes x MAGs (677 MAGs; scripts/03_make_gene_table.py)
 
 # ---- MAG abundance table A (samples x dereplicated MAGs) ----
 otu <- as(otu_table(ps), "matrix")
@@ -128,12 +128,12 @@ rownames(P_hell) <- P_rel_tbl$sample  # for later multivariate steps
 pathway_dict <- list(
   Respiration_ETC = c("CydA","CyoA","CoxA","CcoN","NuoF","FrdA","SdhA","AtpA","FCC"),
   Carbon_core     = c("RbcL","PEPC","AcnB","CA","CoxL","MDH","Mcr"),   # Mcr = malonyl-CoA reductase (carbon fixation), not methyl-CoM reductase
-  B12_cobalamin   = c("BluB","BtuCDF","CobA","CobC","CobU","CbiG","IsiB"),
-  DMSP_Methyl     = c("dmdA","dmdB","dmdD","dddL","DddP","mddA","dmoA","Tmm","mtoX","dorA"),
-  Nitrogen_cycle  = c("AmoA","AmoB","AmoC","NxrA","NapA","NarG","NirK","NirS","NrfA","NorB","NosZ"),
+  B12_cobalamin   = c("BluB","BtuCDF","CobA","CobC","CobU","CbiG"),
+  DMSP_Methyl     = c("dmdA","dmdB","dmdD","dddL","DddP","mddA","Tmm","mtoX","dorA"),
+  Nitrogen_cycle  = c("AmoA","NxrA","NapA","NarG","NirK","NirS","NrfA","NorB","NosZ"),
   Sulfur_cycle    = c("Sqr","SoxB","DsrA"),
   Methane_redox   = c("PmoA"),
-  Phototrophy     = c("PsaA","PsbA","RHO"),
+  Phototrophy     = c("PsaA","PsbA","PufM","RHO"),
   Hydrogenases    = c("NiFe"),
   Detox_misc      = c("ArsC","RdhA","ARO","FdhA")
 )
@@ -320,7 +320,7 @@ sentinels <- gene_effects %>%
   ungroup()
 
 # Ensure Phototrophy sentinels appear
-phototrophy_sentinels <- intersect(c("PsbA","PsaA","RHO"), colnames(P_raw_tbl))
+phototrophy_sentinels <- intersect(c("PsbA","PufM","PsaA","RHO"), colnames(P_raw_tbl))
 missing_ps <- setdiff(phototrophy_sentinels, sentinels$gene)
 if (length(missing_ps) > 0) {
   sentinels <- bind_rows(
@@ -356,6 +356,16 @@ sentinel_long <- gene_long %>%
     pathway = factor(pathway, levels = c(main_pathways, "Phototrophy"))
   )
 
+# ---------- Gene labels (figure labels only) ----------
+# Gene symbols are italic with a lowercase first letter (nirK, soxB, btuCDF). Enzyme abbreviations
+# without a single gene symbol in the reference database stay roman.
+roman_gene_labels <- c("MDH", "PEPC", "RHO")
+gene_label_expr <- function(g) {
+  dplyr::case_when(
+    g %in% roman_gene_labels ~ g,
+    TRUE ~ paste0("italic(", tolower(substr(g, 1, 1)), substr(g, 2, nchar(g)), ")"))
+}
+
 # Label positions: Winter endpoints (one label per gene per facet)
 label_points <- sentinel_long %>%
   group_by(pathway, gene) %>%
@@ -377,11 +387,11 @@ panelB_plot <- ggplot(sentinel_long,
   ggrepel::geom_text_repel(
     data = label_points,
     inherit.aes = FALSE,                                # <-- key line
-    aes(x = season, y = y_lab, label = gene,            # only what we need
+    aes(x = season, y = y_lab, label = gene_label_expr(gene),  # plotmath labels
         # carry facet mapping so labels land in the right panels:
         # (color by pathway to match facet header color if you like)
     ),
-    color = "black", size = 3,
+    color = "black", size = 3, parse = TRUE,
     min.segment.length = 0,
     box.padding = 0.15, point.padding = 0.15, segment.size = 0.2, seed = 42
   ) +
@@ -421,6 +431,7 @@ panelC_plot <- sentinel_z %>%
   ggplot(aes(x = season, y = gene, fill = z)) +
   geom_tile(color = "white", linewidth = 0.2) +
   facet_grid(pathway ~ ., scales = "free_y", space = "free_y", labeller = as_labeller(short_pw)) +
+  scale_y_discrete(labels = function(x) parse(text = gene_label_expr(x))) +
   scale_fill_gradient2(low = muted("blue"), mid = "white", high = muted("red"),
                        midpoint = 0, limits = c(-zlim, zlim),
                        name = "z (seasonal mean)") +
