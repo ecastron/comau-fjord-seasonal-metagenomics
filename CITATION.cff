@@ -5,8 +5,8 @@ type: software
 license: MIT
 repository-code: "https://github.com/ecastron/comau-fjord-seasonal-metagenomics"
 doi: 10.5281/zenodo.23401703
-version: 1.0.0
-date-released: 2026-10-15
+version: 1.1.0
+date-released: 2026-10-20
 authors:
   - family-names: Guajardo-Leiva
     given-names: Sergio
